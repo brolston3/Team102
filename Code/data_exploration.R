@@ -1,4 +1,4 @@
-
+#read the data
 df.orders = read.csv('./data/orders.csv',header=TRUE)
 df.vendors = read.csv('./data/vendors.csv',header=TRUE)
 
