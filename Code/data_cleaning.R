@@ -27,3 +27,8 @@ df.order.date$created_at <- as.Date(df.order.date$created_at)
 df.weather.clean$created_at <- df.weather.clean$datetime
 
 df.new = merge(x=df.order.date, y=df.weather.clean, by="created_at")
+
+#cleaning orders data
+orders_clean = df.orders[-c(5:10,12,15:21,23,24,26)]
+View(orders_clean)
+
