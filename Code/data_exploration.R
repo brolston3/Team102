@@ -14,7 +14,7 @@ hist(ratings)
 max(ratings)
 min(ratings)
 
-#pull preparation time
+#pull preparation time=
 prep.times <- df.vendors$prepration_time
 hist(prep.times)
 max(prep.times)
