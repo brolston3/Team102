@@ -6,6 +6,7 @@
 
 library(dplyr)
 library(lubridate)
+library(tidyr)
 
 #read the data
 df.orders = read.csv('./data/orders.csv',header=TRUE)
@@ -40,10 +41,22 @@ head(df.new)
 
 
 #remove orders where item count == NA
-df.orders.clean <- df.orders.clean[which(df.orders.clean["item_count"] >= 0),]
+df.orders.clean <- df.orders.clean[which(df.orders.clean["item_count"]>= 0),]
 
+#remove orders where preparation time == NA
+df.orders.clean <- df.orders.clean[which(df.orders.clean["preparationtime"] >= 5),]
 
-write.csv(df.orders.clean, './data/orders_clean.csv')
+#did they rate the vendor?
+df.orders.clean$rated_vendor <- df.orders.clean$vendor_rating
+df.orders.clean$rated_vendor[is.na(df.orders.clean$rated_vendor)] <- -1
+df.orders.clean$rated_vendor <- as.factor(ifelse(df.orders.clean$rated_vendor >=0 , 1, 0))
+
+#create a categorical variable for rain or no rain
+#0.01 correlates to a "light drizzle"
+df.orders.clean$rain<- as.factor(ifelse(df.orders.clean$precip > 0 , 1, 0))
+
+#write to csv
+write.csv(df.orders.clean,"./data/orders_clean.csv", row.names = FALSE)
 
 ################################################################################
 #Looking at the vendors data
