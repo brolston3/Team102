@@ -5,6 +5,7 @@
 
 library(dplyr)
 library(lubridate)
+library(stringr)
 
 #read the data
 df.orders = read.csv('./data/orders.csv',header=TRUE)
@@ -63,3 +64,18 @@ orders_clean$created_at_time <- format(as.POSIXct(orders_clean$created_at), form
 
 
 #############################cleaning vendors dataset###############################
+vendors_clean = df.vendors[-c(2:4,9,13,14,16:19,49,50,53:59)]
+View(vendors_clean)
+
+#dummy variable. If 1 then just one opening time. Base case = 0 means has multiple open and close times
+vendors_clean$has_one_opening_time = ifelse(vendors_clean$OpeningTime2 == '-', 1, 0)
+View(vendors_clean)
+
+vendors_clean[c('MainOpeningTime', 'MainClosingTime')] <- str_split_fixed(vendors_clean$OpeningTime, '-', 2)
+View(vendors_clean)
+
+#clean time format
+vendors_clean$MainOpeningTime <- format(as.POSIXct(vendors_clean$MainOpeningTime), format = "%H:%M:%S")
+vendors_clean$MainClosingTime <- format(as.POSIXct(vendors_clean$MainClosingTime), format = "%H:%M:%S")
+
+summary(vendors_clean$MainClosingTime)
