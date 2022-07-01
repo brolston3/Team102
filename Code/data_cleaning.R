@@ -34,10 +34,42 @@ df.orders.clean$created_at <- as.Date(df.orders.clean$created_at)
 df.weather.clean$created_at <- df.weather.clean$datetime
 
 #merge columns based on created at
-df.new = merge(x=df.orders.clean, y=df.weather.clean[, names(df.weather.clean) != "datetime"], 
+df.orders.clean = merge(x=df.orders.clean, y=df.weather.clean[, names(df.weather.clean) != "datetime"], 
                by="created_at")
 head(df.new)
 
+
+#remove orders where item count == NA
+df.orders.clean <- df.orders.clean[which(df.orders.clean["item_count"] >= 0),]
+
+
 write.csv(df.new, './data/orders_clean.csv')
 
+################################################################################
+#Looking at the vendors data
+#analysis of columns to keep done in excel
 
+#cleaning vendors data
+df.vendors.clean = df.vendors[-c(2:4, 9, 13:14, 16:19, 21:50, 53:59)]
+head(df.vendors.clean)
+
+#Add a column for revenue
+#Let's get revenue for each restaurant
+totals <- c()
+for (i in df.vendors.clean$id){
+  new <- sum(df.orders.clean$grand_total[which(df.orders.clean$vendor_id == i)])
+  totals <- c(totals, new)
+}
+
+#write it into the dataset under "revenue"
+df.vendors.clean$revenue <- totals
+
+
+#add a column for total items sold
+items <- c()
+for (i in df.vendors.clean$id){
+  item.count <- sum(df.orders.clean$item_count[which(df.orders.clean$vendor_id == i)])
+  print(i)
+  print(item.count)
+  items <- c(items, item.count)
+}
