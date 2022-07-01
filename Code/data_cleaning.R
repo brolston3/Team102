@@ -44,7 +44,7 @@ head(df.new)
 df.orders.clean <- df.orders.clean[which(df.orders.clean["item_count"]>= 0),]
 
 #remove orders where preparation time == NA
-df.orders.clean <- df.orders.clean[which(df.orders.clean["preparationtime"] >= 5),]
+df.orders.clean <- df.orders.clean[which(df.orders.clean["preparationtime"] >= 1),]
 
 #did they rate the vendor?
 df.orders.clean$rated_vendor <- df.orders.clean$vendor_rating
@@ -82,8 +82,6 @@ df.vendors.clean$revenue <- totals
 items <- c()
 for (i in df.vendors.clean$id){
   item.count <- sum(df.orders.clean$item_count[which(df.orders.clean$vendor_id == i)])
-  print(i)
-  print(item.count)
   items <- c(items, item.count)
 }
 
