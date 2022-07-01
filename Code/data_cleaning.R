@@ -43,7 +43,7 @@ head(df.new)
 df.orders.clean <- df.orders.clean[which(df.orders.clean["item_count"] >= 0),]
 
 
-write.csv(df.new, './data/orders_clean.csv')
+write.csv(df.orders.clean, './data/orders_clean.csv')
 
 ################################################################################
 #Looking at the vendors data
