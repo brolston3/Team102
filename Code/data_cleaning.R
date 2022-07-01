@@ -86,3 +86,9 @@ for (i in df.vendors.clean$id){
   print(item.count)
   items <- c(items, item.count)
 }
+
+#write to csv
+write.csv(df.vendors.clean,"./data/vendors_clean.csv", row.names = FALSE)
+
+
+
