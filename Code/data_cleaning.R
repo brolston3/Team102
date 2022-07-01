@@ -3,7 +3,6 @@
 #adds temp and percipitation to each order
 #exports it as "orders_clean.csv"
 
-
 library(dplyr)
 library(lubridate)
 
@@ -49,12 +48,15 @@ dim(orders_clean)
 orders_clean = orders_clean[!(is.na(orders_clean$item_count) | orders_clean$item_count==""), ]
 dim(orders_clean)
 
-#vendor_rating has 86710 NA columns. Should we replace with -1?
+#vendor_rating has 86710 NA columns. 
 summary(orders_clean$vendor_rating)
 
-#preparation_time has 48635 NA columns. Should we replace with -1?
+#preparation_time has 48635 NA columns. 
 summary(orders_clean$preparationtime)
 
-#preparation_time has 48635 NA columns. Should we replace with -1?
+#preparation_time has 48635 NA columns.
 summary(orders_clean$created_at)
-View(orders_clean)
+
+#separating created_at into a date column (created_at_date) and time column (created_at_time)
+orders_clean$created_at_date <- as.Date(orders_clean$created_at)
+orders_clean$created_at_time <- format(as.POSIXct(orders_clean$created_at), format = "%H:%M:%S")
