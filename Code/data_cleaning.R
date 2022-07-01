@@ -87,6 +87,8 @@ for (i in df.vendors.clean$id){
   items <- c(items, item.count)
 }
 
+
+df.vendors.clean$total_items <- items
 #write to csv
 write.csv(df.vendors.clean,"./data/vendors_clean.csv", row.names = FALSE)
 
