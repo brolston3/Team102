@@ -39,7 +39,7 @@ head(df.new)
 
 write.csv(df.new, './data/orders_clean.csv')
 
-#cleaning orders data
+#############################cleaning orders dataset###############################
 orders_clean = df.orders[-c(5:10,12,15:21,24,26)]
 dim(orders_clean)
 
@@ -60,3 +60,6 @@ summary(orders_clean$created_at)
 #separating created_at into a date column (created_at_date) and time column (created_at_time)
 orders_clean$created_at_date <- as.Date(orders_clean$created_at)
 orders_clean$created_at_time <- format(as.POSIXct(orders_clean$created_at), format = "%H:%M:%S")
+
+
+#############################cleaning vendors dataset###############################
