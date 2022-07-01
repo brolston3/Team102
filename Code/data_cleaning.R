@@ -1,3 +1,9 @@
+#This code does the following
+#removes extra columns from orders dataset
+#adds temp and percipitation to each order
+#exports it as "orders_clean.csv"
+
+
 library(dplyr)
 library(lubridate)
 
@@ -16,17 +22,23 @@ class(df.weather.clean$datetime[1])
 #convert date to yyyy-mm-dd
 df.weather.clean$datetime <- ymd(df.weather.clean$datetime)
 
-#select just the dates/id of orders table
-df.order.date <- df.orders[c("akeed_order_id", "created_at")]
+#cleaning orders data
+df.orders.clean = df.orders[-c(5:10,12,15:21,24,26)]
+head(df.orders.clean)
 
 #convert date to yyyy-mm-dd
-df.order.date$created_at <- ymd_hms(df.order.date$created_at)
-df.order.date$created_at <- as.Date(df.order.date$created_at)
+df.orders.clean$created_at <- ymd_hms(df.orders.clean$created_at)
+df.orders.clean$created_at <- as.Date(df.orders.clean$created_at)
 
 #rename columns to match
 df.weather.clean$created_at <- df.weather.clean$datetime
 
-df.new = merge(x=df.order.date, y=df.weather.clean, by="created_at")
+#merge columns based on created at
+df.new = merge(x=df.orders.clean, y=df.weather.clean[, names(df.weather.clean) != "datetime"], 
+               by="created_at")
+head(df.new)
+
+write.csv(df.new, './data/orders_clean.csv')
 
 #cleaning orders data
 orders_clean = df.orders[-c(5:10,12,15:21,24,26)]
