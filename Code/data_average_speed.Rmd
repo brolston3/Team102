@@ -1,6 +1,6 @@
 ---
-title: "Data Modeling using Merged Data Set"
-date: '2022-06-27'
+title: "Calculate average speed per hour"
+date: '2022-07-01'
 output: pdf
 ---
 
