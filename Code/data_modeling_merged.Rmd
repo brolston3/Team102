@@ -1,0 +1,93 @@
+---
+title: "Data Modeling using Merged Data Set"
+date: '2022-06-27'
+output: pdf
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(corrplot)
+library(dplyr)
+```
+
+```{r}
+
+#Load data sets
+df.orders = read.csv('./data/orders_clean.csv',header=TRUE)
+df.vendors = read.csv('./data/vendors_clean.csv',header=TRUE)
+
+#Average Speed per hour calculated using available data on Pickup Times, Delivery times and Delivery distances. See: data_average_speed.Rmd
+avg_speed = 35.83
+df.orders$delivery_time = df.orders$deliverydistance * avg_speed
+
+#Create new indicator variables based on Location Type column
+df.orders = df.orders %>%
+            mutate(Loc_Home = ifelse(LOCATION_TYPE=="Home",1,0)) %>%
+            mutate(Loc_Work = ifelse(LOCATION_TYPE=="Work",1,0)) %>%
+            mutate(Loc_Other = ifelse(LOCATION_TYPE=="Other",1,0))
+
+#Calculate Averages of deliverydistance, preparationtime, temp,precip
+df.orders_avg = aggregate(df.orders[,c(7,8,11,12,13,15)],by=list(df.orders$vendor_id), FUN=mean)
+df.orders_avg
+
+#Calculate Totals of item_count,	grand_total
+df.orders_sum = aggregate(df.orders[,c(16,17,18)],by=list(df.orders$vendor_id), FUN=sum)
+df.orders_sum
+
+
+
+#Merged order aggregates and vendors using vendor_id as join key
+df.merged = inner_join(inner_join(df.vendors,
+                        df.orders_avg,
+                        by = c("id" = "Group.1")),
+                        df.orders_sum,
+                        by = c("id" = "Group.1"))
+df.merged
+write.csv(df.merged,"./data/vendors_orders_merged.csv", row.names = FALSE)
+
+```
+
+```{r}
+
+# Create a linear model using all attributes
+lm_revenue = lm(revenue ~ vendor_category_id+delivery_charge+serving_distance+prepration_time
++discount_percentage+vendor_rating+total_items+deliverydistance+preparationtime+temp+precip+rated_vendor+delivery_time+Loc_Home+Loc_Work+Loc_Other, data = df.merged)
+
+# Apply step wise analysis to determine the most significant features
+summary(step(lm_revenue))
+
+```
+Let’s create a linear model using the most important attributes relevant to revenue; Loc_Other, vendor_category_id, vendor_rating, preparationtime, temp.
+
+```{r}
+
+# Create a linear model using the most important attributes
+lm_revenue.final = lm(revenue~Loc_Other+vendor_category_id+vendor_rating+preparationtime+temp, data=df.merged)
+summary(lm_revenue.final)
+
+# Take a look at r squared values to determine quality of fit
+summary(lm_revenue.final)$r.squared
+summary(lm_revenue.final)$adj.r.squared
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
