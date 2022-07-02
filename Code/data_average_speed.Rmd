@@ -1,0 +1,73 @@
+---
+title: "Data Modeling using Merged Data Set"
+date: '2022-06-27'
+output: pdf
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Load Orders Data Set and Remove unnecessary rows
+
+```{r}
+
+#Load data sets
+df.orders = read.csv('./data/orders.csv',header=TRUE)
+
+#Filter data set to delivery time, pickup time and delivery distance columns only
+df.orders.filtered = df.orders[c(13,19,20)]
+
+#Remove rows missing delivery time
+df.orders.filtered = df.orders.filtered[!(!is.na(df.orders.filtered$delivered_time) & df.orders.filtered$delivered_time==""), ]
+
+#Remove rows missing delivery distance
+df.orders.filtered = df.orders.filtered[!(!is.na(df.orders.filtered$deliverydistance) & df.orders.filtered$deliverydistance==""), ]
+
+#Remove rows missing picked up time
+df.orders.filtered = df.orders.filtered[!(!is.na(df.orders.filtered$picked_up_time) & df.orders.filtered$picked_up_time==""), ]
+
+#Remove rows missing picked up time
+df.orders.filtered = df.orders.filtered[!(!is.na(df.orders.filtered$picked_up_time) & df.orders.filtered$picked_up_time==""), ]
+
+#Remove rows missing delivery distance
+df.orders.filtered = df.orders.filtered[!(df.orders.filtered$deliverydistance == 0), ]
+
+#Review dataframe structure
+str(df.orders.filtered)
+
+```
+
+Convert Picked Up Time and Delivery Time to DateTime format.
+Calculate delivery time in hours as Picked Up Time Less Delivery Time.
+Calculate Speed per hour as Distance / Delivery Time in Hours
+
+```{r}
+
+#Convert Date column from chr to date format
+df.orders.filtered$delivered_time = as.POSIXct(df.orders.filtered$delivered_time)
+df.orders.filtered$picked_up_time = as.POSIXct(df.orders.filtered$picked_up_time)
+
+#Calculate delivery time in hours
+df.orders.filtered$delivery_hours = as.numeric(difftime(df.orders.filtered$delivered_time, df.orders.filtered$picked_up_time, units="hours"))
+
+#Remove rows where delivery time took less than 1 minutes as it implies no delivery
+df.orders.filtered = df.orders.filtered[!(df.orders.filtered$delivery_hours < (1/60)), ]
+
+#Calculate Speed per hour
+df.orders.filtered$speed_hour = df.orders.filtered$deliverydistance / df.orders.filtered$delivery_hours
+
+#Review dataframe structure
+str(df.orders.filtered)
+
+```
+
+Finally, determine average speed per hour.
+
+```{r}
+
+#Calculate average Speed per hour
+average_speed = mean(df.orders.filtered$speed_hour) 
+cat("Average Speed per Hour = ", average_speed, sep ="")
+
+```
