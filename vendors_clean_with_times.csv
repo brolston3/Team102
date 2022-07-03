@@ -1,0 +1,101 @@
+id,vendor_category_en,vendor_category_id,delivery_charge,serving_distance,Open,Close,Open_updated,Close_updated,Total Open Time,OpeningTime2,prepration_time,discount_percentage,vendor_rating,vendor_tag,vendor_tag_name,revenue,total_items
+4,Restaurants,2,0,6,11:00AM,11:30PM,11:00 AM,11:30 PM,12:30,-,15,0,4.4,"2,4,5,8,91,22,12,24,16,23","Arabic,Breakfast,Burgers,Desserts,Free Delivery,Grills,Lebanese,Salads,Sandwiches,Shawarma",15401.4,2828
+13,Restaurants,2,0.7,5,08:30AM,10:30PM,8:30 AM,10:30 PM,14:00,-,14,0,4.7,"4,41,51,34,27,15,24,16,28","Breakfast,Cakes,Crepes,Italian,Pasta,Pizzas,Salads,Sandwiches,Soups",5644.2,682
+20,Restaurants,2,0,8,08:00AM,10:45PM,8:00 AM,10:45 PM,14:45,-,19,0,4.5,"4,8,91,10","Breakfast,Desserts,Free Delivery,Indian",14509.4,1589
+23,Restaurants,2,0,5,10:59AM,10:30PM,10:59 AM,10:30 PM,11:31,-,16,0,4.5,"5,8,30,24","Burgers,Desserts,Fries,Salads",10421.2,1109
+28,Restaurants,2,0.7,15,11:00AM,11:45PM,11:00 AM,11:45 PM,12:45,-,10,0,4.4,5,Burgers,12210.2,2763
+33,Restaurants,2,0.7,6,11:00AM,10:30PM,11:00 AM,10:30 PM,11:30,-,17,0,4.6,"8,42","Desserts,Mexican",20470.2,2916
+43,Restaurants,2,0.7,15,11:00AM,11:45PM,11:00 AM,11:45 PM,12:45,-,15,0,4.3,"1,5,30,16","American,Burgers,Fries,Sandwiches",6314.8,1467
+44,Restaurants,2,0.7,15,11:00AM,11:45PM,11:00 AM,11:45 PM,12:45,-,14,0,4.3,"1,5,30,16","American,Burgers,Fries,Sandwiches",12654.7,3068
+55,Restaurants,2,0.7,10,09:00AM,11:30PM,9:00 AM,11:30 PM,14:30,-,19,0,4.5,"4,8,22,32,24,16,28","Breakfast,Desserts,Grills,Milkshakes,Salads,Sandwiches,Soups",9581.1,1667
+66,Restaurants,2,0,15,05:00PM,11:00PM,5:00 PM,11:00 PM,6:00,-,20,10,4,"4,5,8,10,24","Breakfast,Burgers,Desserts,Indian,Salads",434.8,69
+67,Restaurants,2,0,15,08:00AM,11:30PM,8:00 AM,11:30 PM,15:30,-,15,0,4.3,"4,8,22,32,24,16,28","Breakfast,Desserts,Grills,Milkshakes,Salads,Sandwiches,Soups",10465.5,1638
+75,Restaurants,2,0.7,5,11:00AM,10:30PM,11:00 AM,10:30 PM,11:30,-,15,0,4.6,"3,8,9,11,24,54","Asian,Desserts,Healthy Food,Japanese,Salads,Sushi",9725.4,759
+76,Restaurants,2,0.7,15,08:30AM,09:30PM,8:30 AM,9:30 PM,13:00,-,15,0,4.6,"16,4,5,52","Sandwiches,Breakfast,Burgers,Mojitos",5146.5,1292
+78,Restaurants,2,0.7,15,11:00AM,11:00PM,11:00 AM,11:00 PM,12:00,-,17,0,4.4,"15,34,4,28,27,24,8","Pizzas,Italian,Breakfast,Soups,Pasta,Salads,Desserts",0,0
+79,Restaurants,2,0,15,11:59AM,02:15AM,11:59 AM,2:15 AM,14:14,-,15,0,4.7,"5,8,91,27,16","Burgers,Desserts,Free Delivery,Pasta,Sandwiches",59245.7,11595
+81,Restaurants,2,0,15,08:00AM,12:30PM,8:00 AM,12:30 PM,4:30,05:00PM-11:30PM,15,0,3.8,"2,4,8,53,13,24,16","Arabic,Breakfast,Desserts,Mandazi,Omani,Salads,Sandwiches",1642.8,507
+82,Restaurants,2,0.7,8,08:00AM,11:59PM,8:00 AM,11:59 PM,15:59,-,11,0,4.4,"4,8,12,50,15,24,16","Breakfast,Desserts,Lebanese,Manakeesh,Pizzas,Salads,Sandwiches",11866.6,1642
+83,Restaurants,2,0.7,15,11:00AM,11:00PM,11:00 AM,11:00 PM,12:00,-,15,0,4.2,"4,8,24,2","Breakfast,Desserts,Salads,Arabic",1808,172
+84,Restaurants,2,0,15,10:00AM,11:45PM,10:00 AM,11:45 PM,13:45,-,14,0,4.3,"5,30,48,23","Burgers,Fries,Kids meal,Shawarma",73662,9141
+85,Sweets & Bakes,3,0,5,11:59AM,11:30PM,11:59 AM,11:30 PM,11:31,-,15,50,4.6,"8,13","Desserts,Omani",877.3,209
+86,Sweets & Bakes,3,0,15,08:30AM,11:45PM,8:30 AM,11:45 PM,15:15,-,13,0,4.5,"41,51,8,57,38,43,32,62,25","Cakes,Crepes,Desserts,Donuts,Fresh Juices,Ice creams,Milkshakes,Pancakes,Waffles",24681.5,4054
+90,Restaurants,2,0,15,11:59AM,11:45PM,11:59 AM,11:45 PM,11:46,-,14,0,4.4,"1,5,8,52,27","American,Burgers,Desserts,Mojitos ,Pasta",12279.2,2065
+92,Restaurants,2,0.7,6,11:00AM,10:45PM,11:00 AM,10:45 PM,11:45,-,14,0,4.6,"3,38,48","Asian,Fresh Juices,Kids meal",23297.4,1799
+104,Restaurants,2,0,2,10:59AM,11:30PM,10:59 AM,11:30 PM,12:31,-,10,0,4.5,"1,5,91,29,27","American,Burgers,Free Delivery,Hot Dogs,Pasta",12695.3,2187
+105,Restaurants,2,0,15,10:59AM,11:30PM,10:59 AM,11:30 PM,12:31,-,12,0,4.5,"1,5,91,29,27","American,Burgers,Free Delivery,Hot Dogs,Pasta",43129.9,7535
+106,Restaurants,2,0,15,10:59AM,11:30PM,10:59 AM,11:30 PM,12:31,-,10,0,4.5,"1,5,91,29,27","American,Burgers,Free Delivery,Hot Dogs,Pasta",16072.5,2937
+110,Restaurants,2,0.7,15,11:15AM,10:00PM,11:15 AM,10:00 PM,10:45,-,18,35,4.6,"3,58,22,11,33,28","Asian,Dimsum,Grills,Japanese,Rice,Soups",17633.9,1375
+113,Restaurants,2,0,15,10:59AM,10:59PM,10:59 AM,10:59 PM,12:00,-,10,0,4.7,"2,8,91,10","Arabic,Desserts,Free Delivery,Indian",56891.6,6809
+115,Sweets & Bakes,2,0,15,09:59AM,11:45PM,9:59 AM,11:45 PM,13:46,-,13,0,4.8,"8,91,9,56","Desserts,Free Delivery,Healthy Food,Sweets",2045.7,359
+134,Restaurants,2,0,15,08:00AM,09:45PM,8:00 AM,9:45 PM,13:45,-,16,0,4.5,"5,9,32,16,35","Burgers,Healthy Food,Milkshakes,Sandwiches,Steaks",16016.3,1330
+145,Restaurants,2,0,15,04:00PM,11:45PM,4:00 PM,11:45 PM,7:45,-,10,0,3.2,"2,15,16","Arabic,Pizzas,Sandwiches",4812.8,1187
+148,Restaurants,2,0.7,15,08:00AM,11:45PM,8:00 AM,11:45 PM,15:45,-,16,15,4.1,"4,5,22,89,16,23","Breakfast,Burgers,Grills,Pizza,Sandwiches,Shawarma",8521.1,1749
+149,Restaurants,2,0.7,15,11:15AM,10:30PM,11:15 AM,10:30 PM,11:15,-,15,0,4.2,2,Arabic,2746.6,357
+154,Restaurants,2,0.7,15,11:00AM,11:45PM,11:00 AM,11:45 PM,12:45,-,15,0,4.5,"1,5,47,24,16","American,Burgers,Mishkak,Salads,Sandwiches",6005.8,1074
+157,Restaurants,2,0.7,15,10:59AM,03:30PM,10:59 AM,3:30 PM,4:31,06:30PM-11:00PM,15,0,4.3,"31,8,10,33,67,21","Biryani,Desserts,Indian,Rice,Thali,Vegetarian",10191.8,1593
+159,Restaurants,2,0,6,11:30am,11:30PM,11:30 AM,11:30 PM,12:00,-,13,0,4.5,"1,5,16","American,Burgers,Sandwiches",22249.4,3276
+160,Restaurants,2,0.7,15,10:00AM,11:45PM,10:00 AM,11:45 PM,13:45,-,14,0,4.3,"1,5,48,16","American,Burgers,Kids meal,Sandwiches",8121.6,1275
+161,Restaurants,2,0.7,10,11:00AM,11:59PM,11:00 AM,11:59 PM,12:59,12:00AM-01:00AM,17,0,4.2,"5,8,63,15","Burgers,Desserts,Pastry,Pizzas",452.9,103
+176,Restaurants,2,0.7,8,09:00AM,09:01AM,9:00 AM,9:01 AM,0:01,-,21,0,4.3,"4,8,22,32,24,16,28","Breakfast,Desserts,Grills,Milkshakes,Salads,Sandwiches,Soups",10408.4,1696
+180,Restaurants,2,0.7,15,11:00AM,11:00PM,11:00 AM,11:00 PM,12:00,-,15,0,3.8,"2,22,10,27,24,17,28,56","Arabic,Grills,Indian,Pasta,Salads,Seafood,Soups,Sweets",787.5,102
+188,Restaurants,2,0.7,8,11:59AM,10:45PM,11:59 AM,10:45 PM,10:46,-,14,0,4.6,"34,27,15,24,16","Italian,Pasta,Pizzas,Salads,Sandwiches",23657.2,1749
+189,Restaurants,2,0.7,15,07:58AM,11:45PM,7:58 AM,11:45 PM,15:47,-,10,0,4.3,"16,23,38,52,32","Sandwiches,Shawarma,Fresh Juices,Mojitos,Milkshakes",14932.9,4263
+191,Restaurants,2,0.7,8,09:00AM,11:45PM,9:00 AM,11:45 PM,14:45,-,11,0,4.5,"38,32,52,16,23","Fresh Juices,Milkshakes,Mojitos ,Sandwiches,Shawarma",13466.7,4021
+192,Restaurants,2,0.7,10,09:00AM,11:45PM,9:00 AM,11:45 PM,14:45,-,11,0,4.3,"38,32,52,16,23","Fresh Juices,Milkshakes,Mojitos ,Sandwiches,Shawarma",4751.3,1501
+193,Restaurants,2,0.7,10,11:00AM,11:01PM,11:00 AM,11:01 PM,12:01,-,18,0,4.3,"2,5,16,23,22,15,8","Arabic,Burgers,Sandwiches,Shawarma,Grills,Pizzas,Desserts",525,124
+195,Restaurants,2,0.7,15,05:30PM,11:59PM,5:30 PM,11:59 PM,6:29,00:01AM-02:30AM,15,0,4.2,"5,30,22,47,52,16,56","Burgers,Fries,Grills,Mishkak,Mojitos ,Sandwiches,Sweets",2922.9,618
+196,Sweets & Bakes,3,0.7,10,06:00PM,11:59PM,6:00 PM,11:59 PM,5:59,00:01AM-02:30AM,17,0,4.4,,,0,0
+197,Restaurants,2,0,15,11:59AM,10:45PM,11:59 AM,10:45 PM,10:46,-,17,0,4.4,"91,42,24","Free Delivery,Mexican,Salads",8205,860
+199,Sweets & Bakes,3,0,15,08:30AM,11:45PM,8:30 AM,11:45 PM,15:15,-,15,0,4.5,"41,51,8,57,38,43,32,52,62,25","Cakes,Crepes,Desserts,Donuts,Fresh Juices,Ice creams,Milkshakes,Mojitos ,Pancakes,Waffles",4758.2,767
+201,Restaurants,2,0.7,15,11:00AM,03:50pm,11:00 AM,3:50 PM,4:50,6:10pm-12:00am,12,0,4,"31,8,10,28","Biryani,Desserts,Indian,Soups",4888,858
+203,Restaurants,2,0.7,15,11:00AM,11:01PM,11:00 AM,11:01 PM,12:01,-,16,0,4,"1,16,29,30","American,Sandwiches,Hot Dogs,Fries",2095.4,314
+207,Restaurants,2,0.7,15,11:00AM,04:00PM,11:00 AM,4:00 PM,5:00,06:00PM-11:45PM,15,0,4.1,"2,31,7,22,10,33,24,28,19","Arabic,Biryani,Chinese,Grills,Indian,Rice,Salads,Soups,Thai",5794,815
+216,Restaurants,2,0.7,6,09:00AM,08:00pm,9:00 AM,8:00 PM,11:00,-,15,0,4.7,"60,73","Coffee,Organic",9690.1,1214
+221,Sweets & Bakes,3,0.7,15,09:00AM,11:00PM,9:00 AM,11:00 PM,14:00,-,10,0,4.2,"38,9,36","Fresh Juices,Healthy Food,Smoothies",398.6,67
+225,Restaurants,2,0,15,06:15AM,11:45PM,6:15 AM,11:45 PM,17:30,-,10,0,4.2,"4,91,38,30,79,52,45","Breakfast,Free Delivery,Fresh Juices,Fries,Karak,Mojitos ,Rolls",9562.3,2704
+231,Sweets & Bakes,3,0.7,10,09:00AM,10:00pm,9:00 AM,10:00 PM,13:00,10pm-11pm,15,0,4.3,,,0,0
+237,Restaurants,2,0.7,15,08:30PM,11:59PM,8:30 PM,11:59 PM,3:29,00:01AM-02:30AM,15,0,4.6,"1,5,8,57,30,27,24,16","American,Burgers,Desserts,Donuts,Fries,Pasta,Salads,Sandwiches",13306.7,2037
+243,Restaurants,2,0.7,15,01:00PM,02:00AM,1:00 PM,2:00 AM,15:00,01.00PM-02.00AM,11,0,4.4,,,0,0
+250,Restaurants,2,0.7,5,09:00AM,11:45PM,9:00 AM,11:45 PM,14:45,-,15,0,4.5,"1,4,45,24,16","American,Breakfast,Rolls,Salads,Sandwiches",3302.3,527
+259,Restaurants,2,0,15,05:00PM,11:59PM,5:00 PM,11:59 PM,6:59,-,15,0,4.3,"1,5,48,27,16,36,28,35","American,Burgers,Kids meal,Pasta,Sandwiches,Smoothies,Soups,Steaks",12202.4,860
+265,Sweets & Bakes,3,0,10,08:00AM,11:45PM,8:00 AM,11:45 PM,15:45,-,15,0,4.3,"8,91,38,9,43,32,52","Desserts,Free Delivery,Fresh Juices,Healthy Food,Ice creams,Milkshakes,Mojitos ",687.5,113
+271,Restaurants,2,0.7,5,05:00PM,11:45PM,5:00 PM,11:45 PM,6:45,-,11,0,4.5,"1,5,48,27,16,36,28,35","American,Burgers,Kids meal,Pasta,Sandwiches,Smoothies,Soups,Steaks",13495.8,939
+274,Sweets & Bakes,3,0.7,15,11:00AM,11:00PM,11:00 AM,11:00 PM,12:00,-,45,0,3.7,"41,57","Cakes,Donuts",736.4,80
+288,Restaurants,2,0,6,11:15AM,03:00PM,11:15 AM,3:00 PM,3:45,05:15PM-09:30PM ,15,0,4.6,"3,8,33,24,28,19","Asian,Desserts,Rice,Salads,Soups,Thai",16872.8,1690
+289,Restaurants,2,0.7,15,11:30AM,11:59PM,11:30 AM,11:59 PM,12:29,-,15,0,4.5,"1,5,30,52","American,Burgers,Fries,Mojitos ",6411.1,772
+294,Restaurants,2,0,10,09:00AM,11:45PM,9:00 AM,11:45 PM,14:45,-,15,0,4.4,"5,8,91,22,42","Burgers,Desserts,Free Delivery,Grills,Mexican",951.8,92
+295,Restaurants,2,0.7,5,08:00AM,11:45PM,8:00 AM,11:45 PM,15:45,-,15,0,4.7,"60,38,61,16,36","Coffee,Fresh Juices,Hot Chocolate,Sandwiches,Smoothies",5427.4,807
+298,Restaurants,2,0,8,10:00AM,11:00PM,10:00 AM,11:00 PM,13:00,-,17,0,4.7,"91,38,90,24,16","Free Delivery,Fresh Juices,Pastas,Salads,Sandwiches",11616.1,1147
+299,Restaurants,2,0.7,15,10:00AM,01:45PM,10:00 AM,1:45 PM,3:45,-,15,0,4.2,"83,30,52,27,16","Combos,Fries,Mojitos ,Pasta,Sandwiches",8934,1452
+300,Restaurants,2,0.7,15,08:00AM,11:00PM,8:00 AM,11:00 PM,15:00,-,15,0,4.4,"60,38,61,16,36","Coffee,Fresh Juices,Hot Chocolate,Sandwiches,Smoothies",3166,474
+303,Restaurants,2,0.7,15,08:00AM,03:30PM,8:00 AM,3:30 PM,7:30,-,15,0,4.7,"60,38,61,16,36","Coffee,Fresh Juices,Hot Chocolate,Sandwiches,Smoothies",3413.9,522
+304,Restaurants,2,0.7,10,10:00AM,11:15PM,10:00 AM,11:15 PM,13:15,-,15,0,4,"1,4,5,30,16","American,Breakfast,Burgers,Fries,Sandwiches",1570.6,303
+310,Restaurants,2,0.7,15,09:00AM,07:00PM,9:00 AM,7:00 PM,10:00,-,13,0,4.8,"26,8,24","Bagels,Desserts,Salads",12808.3,1515
+356,Restaurants,2,0,15,11:00AM,11:00PM,11:00 AM,11:00 PM,12:00,-,15,0,4.2,"1,48,27,15,24","American,Kids meal,Pasta,Pizzas,Salads",25878.1,2396
+386,Sweets & Bakes,3,0,15,08:30AM,11:45PM,8:30 AM,11:45 PM,15:15,-,15,0,4.5,80,Churros,35916,5265
+391,Restaurants,2,0.7,5,09:00AM,11:00PM,9:00 AM,11:00 PM,14:00,-,10,0,4.2,"1,4,5,8,34,24,16,28,35","American,Breakfast,Burgers,Desserts,Italian,Salads,Sandwiches,Soups,Steaks",2046.6,260
+398,Restaurants,2,0.7,15,11:00AM,11:00PM,11:00 AM,11:00 PM,12:00,-,15,0,4.2,"13,2,77,27,33,28,12","Omani,Arabic,Shuwa,Pasta,Rice,Soups,Lebanese",8630.3,1056
+401,Sweets & Bakes,3,0.7,15,10:00AM,11:15PM,10:00 AM,11:15 PM,13:15,-,13,0,4.5,"64,36","Frozen yoghurt,Smoothies",9211.8,1269
+419,Restaurants,2,0.7,15,11:00AM,12:00PM,11:00 AM,12:00 PM,1:00,-,15,0,4.2,"2,71,16","Arabic,Kushari,Sandwiches",5675.6,1193
+459,Restaurants,2,0,10,11:59AM,11:59PM,11:59 AM,11:59 PM,12:00,-,15,0,4.2,"5,91,32,52","Burgers,Free Delivery,Milkshakes,Mojitos ",11971.4,2632
+537,Restaurants,2,0,15,08:00AM,11:45AM,8:00 AM,11:45 AM,3:45,-,20,0,4.4,"1,5,8,91,30,29,48","American,Burgers,Desserts,Free Delivery,Fries,Hot Dogs,Kids meal",17536.8,2991
+547,Restaurants,2,0.7,10,09:00AM,11:59PM,9:00 AM,11:59 PM,14:59,-,10,0,4.4,"38,12,16,23","Fresh Juices,Lebanese,Sandwiches,Shawarma",18798.1,3393
+573,Restaurants,2,0,15,04:59PM,11:45PM,4:59 PM,11:45 PM,6:46,-,10,0,4.6,"5,8,91,27,16","Burgers,Desserts,Free Delivery,Pasta,Sandwiches",17413.2,3338
+575,Sweets & Bakes,3,0,15,10:00AM,11:45PM,10:00 AM,11:45 PM,13:45,-,15,0,4.1,"60,62,86,25","Coffee,Pancakes,Spanish Latte,Waffles",4189.9,831
+577,Restaurants,2,0.7,8,11:00AM,11:00PM,11:00 AM,11:00 PM,12:00,-,5,0,4.5,"5,8,49,24","Burgers,Desserts,Family Meal,Salads",19009.7,1703
+578,Restaurants,2,0.7,15,12:00PM,11:59PM,12:00 PM,11:59 PM,11:59,-,10,0,4.3,"38,16,23","Fresh Juices,Sandwiches,Shawarma",22035.7,3628
+582,Restaurants,2,0.7,15,12:00PM,11:59PM,12:00 PM,11:59 PM,11:59,-,10,0,4.2,"38,16,23","Fresh Juices,Sandwiches,Shawarma",8702.2,1499
+583,Restaurants,2,0.7,15,00:01AM,01:00AM,12:01 AM,1:00 AM,0:59,09:00AM-11:59PM,10,0,4.3,"38,16,23","Fresh Juices,Sandwiches,Shawarma",19300.7,3811
+676,Restaurants,2,0.7,14,12:00:00 AM,,44826 26, ,#VALUE!,-,10,0,4.4,"31,8,10,44,33","Biryani,Desserts,Indian,Kebabs,Rice",11581.8,1744
+679,Restaurants,2,0.7,15,08:00AM,11:00PM,8:00 AM,11:00 PM,15:00,-,10,0,4.5,"31,8,10,44,33","Biryani,Desserts,Indian,Kebabs,Rice",19359.9,3085
+681,Restaurants,2,0.7,15,12:00:00 AM,,44826 26, ,#VALUE!,-,10,0,4.4,"31,8,10,44,33","Biryani,Desserts,Indian,Kebabs,Rice",18228.4,2846
+841,Restaurants,2,0,6,,, , ,#VALUE!,,10,0,4,"1,4,5,6,8,91,30,43,48,24","American,Breakfast,Burgers,Cafe,Desserts,Free Delivery,Fries,Ice creams,Kids meal,Salads",7935.4,1342
+843,Restaurants,2,0,5,,, , ,#VALUE!,,10,0,4.3,"1,4,5,6,8,91,30,43,48,24","American,Breakfast,Burgers,Cafe,Desserts,Free Delivery,Fries,Ice creams,Kids meal,Salads",7624.1,1261
+845,Restaurants,2,0,5,,, , ,#VALUE!,,10,0,4,"1,4,5,6,8,91,30,43,48,24","American,Breakfast,Burgers,Cafe,Desserts,Free Delivery,Fries,Ice creams,Kids meal,Salads",8048.4,1425
+846,Restaurants,2,0,6,,, , ,#VALUE!,,10,0,4.1,"1,4,5,6,8,91,30,43,48,24","American,Breakfast,Burgers,Cafe,Desserts,Free Delivery,Fries,Ice creams,Kids meal,Salads",30281.1,5029
+849,Restaurants,2,0,10,,, , ,#VALUE!,,10,0,4.1,"1,4,5,6,8,91,30,43,48,24","American,Breakfast,Burgers,Cafe,Desserts,Free Delivery,Fries,Ice creams,Kids meal,Salads",12233.5,2118
+855,Restaurants,2,0,8,,, , ,#VALUE!,,10,0,4.2,"1,5,8,91,30,48,24","American,Burgers,Desserts,Free Delivery,Fries,Kids meal,Salads",9989.6,1685
+856,Restaurants,2,0,7,,, , ,#VALUE!,,10,0,4.3,"1,4,5,6,8,91,30,43,48,24","American,Breakfast,Burgers,Cafe,Desserts,Free Delivery,Fries,Ice creams,Kids meal,Salads",12875.6,2173
+858,Restaurants,2,0,3,,, , ,#VALUE!,,10,0,4.2,"1,4,5,6,8,91,30,43,48,24","American,Breakfast,Burgers,Cafe,Desserts,Free Delivery,Fries,Ice creams,Kids meal,Salads",9656.5,1681
+907,Restaurants,2,0.7,12,,, , ,#VALUE!,,20,0,4.3,"46,52,16","Fatayers,Mojitos ,Sandwiches",3638,1663
