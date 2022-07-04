@@ -34,8 +34,6 @@ df.orders_avg
 df.orders_sum = aggregate(df.orders[,c(16,17,18)],by=list(df.orders$vendor_id), FUN=sum)
 df.orders_sum
 
-
-
 #Merged order aggregates and vendors using vendor_id as join key
 df.merged = inner_join(inner_join(df.vendors,
                         df.orders_avg,
@@ -43,13 +41,15 @@ df.merged = inner_join(inner_join(df.vendors,
                         df.orders_sum,
                         by = c("id" = "Group.1"))
 df.merged
-write.csv(df.merged,"./data/vendors_orders_merged.csv", row.names = FALSE)
+
+#Export merged dataset
+#write.csv(df.merged,"./data/vendors_orders_merged.csv", row.names = FALSE)
 
 ```
 
 ```{r}
 
-# Create a linear model using all attributes
+# Create a linear model using all attributes. Outcome variable: revenue
 lm_revenue = lm(revenue ~ vendor_category_id+delivery_charge+serving_distance+prepration_time
 +discount_percentage+vendor_rating+total_items+deliverydistance+preparationtime+temp+precip+rated_vendor+delivery_time+Loc_Home+Loc_Work+Loc_Other, data = df.merged)
 
@@ -57,12 +57,12 @@ lm_revenue = lm(revenue ~ vendor_category_id+delivery_charge+serving_distance+pr
 summary(step(lm_revenue))
 
 ```
-Let’s create a linear model using the most important attributes relevant to revenue; Loc_Other, vendor_category_id, vendor_rating, preparationtime, temp.
+Let’s create a linear model using the most important attributes relevant to revenue as the outcome variable; Loc_Other, vendor_category_id, vendor_rating, preparationtime, temp.
 
 ```{r}
 
 # Create a linear model using the most important attributes
-lm_revenue.final = lm(revenue~Loc_Other+vendor_category_id+vendor_rating+preparationtime+temp, data=df.merged)
+lm_revenue.final = lm(revenue~Loc_Other+vendor_category_id+vendor_rating+preparationtime+temp+Loc_Home, data=df.merged)
 summary(lm_revenue.final)
 
 # Take a look at r squared values to determine quality of fit
@@ -70,6 +70,18 @@ summary(lm_revenue.final)$r.squared
 summary(lm_revenue.final)$adj.r.squared
 
 ```
+```{r}
+
+# Create a linear model using all attributes. Outcome variable: vendor_rating
+lm_vendor_rating = lm(vendor_rating ~ vendor_category_id+delivery_charge+serving_distance+prepration_time+discount_percentage+total_items+deliverydistance+preparationtime+temp+precip+delivery_time+Loc_Home+Loc_Work+Loc_Other, data = df.merged)
+
+# Apply step wise analysis to determine the most significant features
+summary(step(lm_vendor_rating))
+
+```
+Multiple R-squared:  0.1635,	Adjusted R-squared:  0.1267 
+
+The R-Squared values of the stepwise regression model with vendor_rating as the outcome variable is extremely low implying that the model is not a good fit.
 
 ```{r}
 
